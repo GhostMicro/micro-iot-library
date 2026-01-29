@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 GhostLibrary V1 (Centralized Hub)
 
-## Getting Started
+**The Official Library Repository for the GhostMicro Ecosystem.**
 
-First, run the development server:
+![GhostLibrary Preview](public/preview.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This centralized hub provides a curated, verified, and stylized collection of Arduino/ESP32 libraries essential for GhostMicro projects. It ensures compatibility and eliminates the "hunting for drivers" phase.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌟 Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Curated Selection**: Only verified libraries that work with our `micro-iot-gen` engine.
+- **Neon Glassmorphism UI**: Beautiful, futuristic interface consistent with our Design Language.
+- **One-Click Download**: Direct access to `.zip` files ready for Arduino IDE.
+- **Categorized**: organized by Sensors, Displays, Actuators, and Protocols.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+### Installation
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/gridsmicro/micro-iot-library.git
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+3.  Run the development server:
+    ```bash
+    npm run dev
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+### Usage
+- Open [http://localhost:3000](http://localhost:3000).
+- Browse or search for the required library (e.g., "PZEM").
+- Click **Download** to get the zip file.
+- Install in Arduino IDE: `Sketch > Include Library > Add .ZIP Library`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Included Libraries
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Category    | Library            | Purpose               |
+| :---------- | :----------------- | :-------------------- |
+| **Sensor**  | `Adafruit_BME280`  | Atmosphere monitoring |
+| **Power**   | `PZEM-004T v3`     | Energy monitoring     |
+| **Display** | `Adafruit_SSD1306` | OLED Screens          |
+| **Network** | `PubSubClient`     | MQTT Communication    |
+| **Data**    | `ArduinoJson 7`    | JSON Parsing (Core)   |
 
-## Deploy on Vercel
+## 🛠️ Tech Stack
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS + Framer Motion
+- **Design**: GhostMicro Neon Glass Theme
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*GhostMicro Corp &copy; 2026*
